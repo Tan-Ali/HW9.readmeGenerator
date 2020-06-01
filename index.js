@@ -1,33 +1,62 @@
+const inquirer = require("inquirer");
+
 const questions = [
 
     {
         type: "input",
-        name: "gitHub",
+        name: "username",
         message: "What is your gitHub username?"
-    };
+    },
     {
         type: "input",
-        name: "gitHub",
-        message: "What is your gitHub username?"
-    }
-    {;
-        type: "input",
-        name: "gitHub",
-        message: "What is your gitHub username?"
-    };
+        name: "title",
+        message: "What is the title of the project?"
+    },
     {
         type: "input",
-        name: "gitHub",
-        message: "What is your gitHub username?"
-    };
+        name: "description",
+        message: "Describe the project:"
+    },
     {
         type: "input",
-        name: "gitHub",
-        message: "What is your gitHub username?"
-    };
+        name: "contents",
+        message: "Table of Contents"
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "How is the application installed?"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "How is the application used?"
+    },
+    {
+        type: "input",
+        name: "license",
+        message: "Licensing information:"
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Who contributed to the project?"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Provide example of a test for the project (leave blank if none):"
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "Information to be contacted if any questions:"
+    },
 ];
 
 function writeToFile(fileName, data) {
+   
+    })
 }
 
 function init() {
