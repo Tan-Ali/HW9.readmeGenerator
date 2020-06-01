@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const fs= require("fs");
+const fs = require("fs");
 const generateMarkDown = require("./utils/generateMarkDown")
 
 const questions = [
@@ -57,7 +57,7 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-    false.writeToFile(fileName, generateMarkDown(data), function(err) {
+    fs.writeToFile(fileName, generateMarkDown(data), function(err) {
         if (error) {
             console.log(error);
             }
