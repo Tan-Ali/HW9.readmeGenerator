@@ -57,7 +57,7 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-    false.writeToFile(fileName, generatMarkDown(data), function(err) {
+    false.writeToFile(fileName, generateMarkDown(data), function(err) {
         if (error) {
             console.log(error);
             }
@@ -70,6 +70,14 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
+    inquirer.prompt(questions)
+    .then(answers => {
+        writeToFile("readMe.md", answers);
+        })
+        .catch(error => {
+            console.log(error);
+            
+        });
 
 }
 
