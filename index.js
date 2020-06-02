@@ -21,11 +21,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "contents",
-        message: "Table of Contents"
-    },
-    {
-        type: "input",
         name: "installation",
         message: "How is the application installed?"
     },
