@@ -57,7 +57,7 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, generateMarkdown(data), function(error) {
+    fs.writeFile(fileName, generateMarkdown(data), function(error) {
         if (error) {
             console.log(error);
             }
@@ -80,3 +80,5 @@ function init() {
 }
 
 init();
+
+
