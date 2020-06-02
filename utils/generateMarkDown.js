@@ -32,8 +32,8 @@ function generateMarkdown(data) {
 
   ## Contributing
 
-  [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/StrapDown.js/graphs/contributors/)
-   
+  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 
   ${data.contributing}
 
