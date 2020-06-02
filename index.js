@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkDown = require("./utils/generateMarkDown")
+const generateMarkdown = require("./utils/generateMarkDown");
 
 const questions = [
 
@@ -57,7 +57,7 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, generateMarkDown(data), function(err) {
+    fs.writeToFile(fileName, generateMarkdown(data), function (error) {
         if (error) {
             console.log(error);
             }
@@ -65,14 +65,12 @@ function writeToFile(fileName, data) {
                 console.log("File created!");
             }
     });
-     
-    
 }
 
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        writeToFile("readMe.md", answers);
+        writeToFile("newREADME.md", answers);
         })
         .catch(error => {
             console.log(error);

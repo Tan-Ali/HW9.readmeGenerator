@@ -44,5 +44,5 @@ function generateMarkdown(data) {
   `;
   }
   
-  module.exports = generateMarkDown;
+  module.exports = generateMarkdown;
   
