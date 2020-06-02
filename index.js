@@ -42,7 +42,7 @@ const questions = [
     {
         type: "input",
         name: "contributing",
-        message: "Who contributed to the project?"
+        message: "How many have contributed to the project?"
     },
     {
         type: "input",
