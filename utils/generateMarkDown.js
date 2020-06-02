@@ -2,6 +2,8 @@ function generateMarkdown(data) {
     return `
   # ${data.title}
 
+  
+
   ## Description
 
   ${data.description}
@@ -29,7 +31,9 @@ function generateMarkdown(data) {
   ${data.license}
 
   ## Contributing
-  [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat)]() 
+
+  [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/StrapDown.js/graphs/contributors/)
+   
 
   ${data.contributing}
 
